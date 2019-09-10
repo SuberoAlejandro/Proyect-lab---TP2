@@ -5,12 +5,12 @@ Seleccionado Argentino de Basquetbol.
 
 Selección de los jugadores que integraran el Seleccionado Nacional de Basquetbol.
 
-El proyecto requiere de una base de datos en MySQL a continuacion se dan las caracteristicas:
+El proyecto requiere de una base de datos en MySQL a continuación se dan las características:
 
-Nombre de la base de datos:  seleccion
-Tablas que debe de contener:  tabala para logueo de usuarios ("register") y tabla para la carga de jugadores ("Jugadores").
+Nombre de la base de datos: seleccion
+Tablas que debe de contener: tabla para usuarios ("register") y tabla para la carga de jugadores ("Jugadores").
 
-para tal fin a continuacion se facilita el query para la creacion de las tablas:
+Para tal fin a continuación se facilita el Query para la creación de las tablas:
 
 1) create database  seleccion;
 
@@ -22,5 +22,5 @@ para tal fin a continuacion se facilita el query para la creacion de las tablas:
 4) CREATE TABLE `seleccion`.`Jugadores` (`id` INT NOT NULL AUTO_INCREMENT,`nombre` VARCHAR(45) NOT NULL,`apellido` VARCHAR(45) NOT NULL,`edad` INT NOT NULL,
   `peso` DOUBLE NOT NULL,  `altura` DOUBLE NOT NULL,  `posicion` VARCHAR(45) NOT NULL,  `calificacion` INT NOT NULL,  PRIMARY KEY (`id`));
 
-NOTA: se recomienda tener la base de datos en el horario del pais donde se almacena los datos, para evitar que le de algun tipo de error,
-para ello puede usar el query para argentina (SET global time_zone ='-3:00';).
+NOTA: se recomienda tener la base de datos en el horario del país donde se almacena los datos, para evitar que le de algún tipo de error, para ello puede usar el Query para argentina (SET global time_zone ='-3:00';).
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Seleccion Argentina</display-name>
+  <servlet>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>com.seleccion.servlet.servlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servletRegistro</servlet-name>
+    <servlet-class>com.seleccion.servlet.servletRegistro</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletRegistroJugadores</servlet-name>
+    <servlet-class>com.seleccion.servlet.ServletRegistroJugadores</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>ServletVistaCalificasion</servlet-name>
+   <servlet-class>com.seleccion.servlet.ServletVistaCalificasion</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ServletVistaCalificasion</servlet-name>
+    <url-pattern>/vistacontrol</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletRegistroJugadores</servlet-name>
+    <url-pattern>/cargarjugadores</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletRegistro</servlet-name>
+    <url-pattern>/registro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/salve</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

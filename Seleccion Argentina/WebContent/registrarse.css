@@ -1,0 +1,11 @@
+.divbotone{
+display: flex; 
+flex-flow: column nowrap;
+align-content: center
+}
+
+.atributo{
+	display: flex; 
+	flex-flow: column nowrap; 
+	align-content: center
+}
